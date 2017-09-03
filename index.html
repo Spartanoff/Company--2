@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Ubuntu" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav id="menu" class="menu">
+        <div class="hamburger" id="hamburger-1">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <ul class="navbar-top">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-contents">
+      <h1>AWSOME PAGES</h1>
+      <span class="header-info">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</span>
+      <div class="header-buttons">
+      <a href="#" class="btn btn-white">SCROLL DOWN</a>
+      <a href="#" class="btn btn-info">Our  Blog</a>
+    </div>
+    </div>
+    </header>
+  </body>
+  <script type="text/javascript">
+    function responsiveNav() {
+      let x = document.querySelector('.navbar-top')
+      x.classList.toggle('active');
+      let y = document.querySelector('#hamburger-1')
+      y.classList.toggle('is-active')
+    }
+    document.querySelector('.hamburger').addEventListener('click', responsiveNav, true)
+  </script>
+</html>
